@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+body {
+    background-color: coral;
+    color: #fff;
+    font-family: 'Lexend', sans-serif;
+}
+
+header {
+    /* background-color: #fa865b; */
+    max-width: 1000px;
+    margin: auto;
+    width: auto;
+}
+
+main {
+    padding-left: 20%;
+    padding-top: 2%;
+    padding: relative;
+    max-width: 1000px;
+    width: auto;
+    margin: auto;
+}
+
+footer {
+    max-width: 1000px;
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+
+#portocovo {
+    max-width: 100%;
+    width: relative;
+}
