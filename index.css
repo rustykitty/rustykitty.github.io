@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 body {
-    background-color: coral;
+    background-color: lightsalmon;
     color: #fff;
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Lexend', 'Aptos', sans-serif;
 }
 
 header {
@@ -11,11 +11,15 @@ header {
     max-width: 1000px;
     margin: auto;
     width: auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
 }
 
 main {
-    padding-left: 20%;
-    padding-top: 2%;
+    padding-top: 1%;
     padding: relative;
     max-width: 1000px;
     width: auto;
@@ -27,9 +31,4 @@ footer {
     margin: auto;
     width: auto;
     text-align: center;
-}
-
-#portocovo {
-    max-width: 100%;
-    width: relative;
 }
