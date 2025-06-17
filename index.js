@@ -7,5 +7,5 @@ $( document ).ready(function() {
            && !obj.href.match(/^javascript\:/)
            && !obj.href.match(/^$/);
     };
-    $('a:external').attr('target', '_blank').attr('rel','noopener noreferrer');
+    $('a:external').addClass('external').attr('target', '_blank').attr('rel','noopener noreferrer');
 });

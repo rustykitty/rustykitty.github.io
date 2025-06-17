@@ -44,8 +44,9 @@ footer p {
 }
 
 a:link { color: gold; }
-a:visited { color: khaki; }
-a:active { color: orange; }
+a.external { color: khaki; }
+a:visited { color: goldenrod; }
+a:active { color: darkorange; }
 
 .username { 
     font-family: "JetBrains Mono", monospace, monospace;
