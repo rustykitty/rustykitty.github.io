@@ -52,11 +52,22 @@ footer p {
     line-height: 1;
 }
 
-a:link { color: gold; }
-a.external { color: khaki; }
-a:visited { color: goldenrod; }
-a:active { color: darkorange; }
+a:link {
+    color: gold;
+}
 
-.username { 
+a.external {
+    color: khaki;
+}
+
+a:visited {
+    color: goldenrod;
+}
+
+a:active {
+    color: darkorange;
+}
+
+.username {
     font-family: "JetBrains Mono", monospace, monospace;
 }

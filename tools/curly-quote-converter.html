@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-<title>Convert curly quotes to straight quotes</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>
-function copyToClipboard(text) {
-    navigator.clipboard.writeText(text);
-}
-function convertText(text) {
-    return text.replace(/[“”]/g, "\"").replace(/[‘’]/g, "'");
-};
-</script>
-<style>
-textarea {
-    width: 32em;
-    height: 12em;
-}
-</style>
+    <title>Convert curly quotes to straight quotes</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+        }
+        function convertText(text) {
+            return text.replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+        }
+    </script>
+    <style>
+        textarea {
+            width: 32em;
+            height: 12em;
+        }
+    </style>
 </head>
+
 <body>
-<h2>Convert "smart"/curly quotes to straight quotes</h2>
-<textarea id="input" placeholder="Paste some text here...">
-</textarea>
-<br>
-<textarea id="output" disabled placeholder="Output will appear here...">
-</textarea>
-<br>
-<button id="copy">Copy output to clipboard</button>
-<script>
-document.getElementById("input").addEventListener("input", event => {
-    document.getElementById("output").value = convertText(event.target.value);
-});
-document.getElementById("copy").addEventListener("click", () => {
-    try {
-        copyToClipboard(document.getElementById("output").value);
-    } catch (e) {
-        alert(`Copy to clipboard failed:\n${e}`);
-        return;
-    }
-    alert("Succesfully copied to clipboard!");
-});
-</script>
+    <h2>Convert "smart"/curly quotes to straight quotes</h2>
+    <textarea id="input" placeholder="Paste some text here..."> </textarea>
+    <br />
+    <textarea id="output" disabled placeholder="Output will appear here...">
+    </textarea>
+    <br />
+    <button id="copy">Copy output to clipboard</button>
+    <script>
+        document.getElementById("input").addEventListener("input", (event) => {
+            document.getElementById("output").value = convertText(
+                event.target.value
+            );
+        });
+        document.getElementById("copy").addEventListener("click", () => {
+            try {
+                copyToClipboard(document.getElementById("output").value);
+            } catch (e) {
+                alert(`Copy to clipboard failed:\n${e}`);
+                return;
+            }
+            alert("Succesfully copied to clipboard!");
+        });
+    </script>
 </body>
+
 </html>

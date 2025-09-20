@@ -12,19 +12,19 @@ async function includePage(url, element) {
     element.innerHTML = await response.text();
 }
 
-$( document ).ready(function() {
+$(document).ready(function () {
     // set external links to open in a new tab
     // https://stackoverflow.com/a/12042162
-    $.expr[':'].external = function(obj) {
-    return !obj.href.match(/^mailto\:/)
-           && (obj.hostname !== location.hostname)
-           && !obj.href.match(/^javascript\:/)
-           && !obj.href.match(/^$/);
+    $.expr[':'].external = function (obj) {
+        return !obj.href.match(/^mailto\:/)
+            && (obj.hostname !== location.hostname)
+            && !obj.href.match(/^javascript\:/)
+            && !obj.href.match(/^$/);
     };
-    $('a:external').addClass('external').attr('target', '_blank').attr('rel','noopener noreferrer');
+    $('a:external').addClass('external').attr('target', '_blank').attr('rel', 'noopener noreferrer');
 });
 
-$( document ).ready(function() {
+$(document).ready(function () {
     includePage('/include/header.html', document.querySelector('header'));
     includePage('/include/nav.html', document.querySelector('nav'));
     includePage('/include/footer.html', document.querySelector('footer'));
