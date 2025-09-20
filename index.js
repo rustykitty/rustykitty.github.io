@@ -25,8 +25,8 @@ $( document ).ready(function() {
 });
 
 $( document ).ready(function() {
-    includePage('include/header.html', document.querySelector('header'));
-    includePage('include/nav.html', document.querySelector('nav'));
-    includePage('include/footer.html', document.querySelector('footer'));
+    includePage('/include/header.html', document.querySelector('header'));
+    includePage('/include/nav.html', document.querySelector('nav'));
+    includePage('/include/footer.html', document.querySelector('footer'));
 })
 
